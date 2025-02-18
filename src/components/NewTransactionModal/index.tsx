@@ -22,7 +22,8 @@ export function NewTransactionModal() {
             <TransactionTypeButton variant="income" value="income">
               Entrada
             </TransactionTypeButton>
-            <TransactionTypeButton variant="outcome" value="outcome">
+            <TransactionTypeButton variant="outcome" value="out
+            youcome">
               Saída
             </TransactionTypeButton>
           </TransactionType>
