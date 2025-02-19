@@ -19,7 +19,7 @@ export function Transactions() {
         <TransactionsTable>
         
           <tbody>
-            
+
           {transactions.map(transaction => {
               return (
                 <tr key={transaction.id}>

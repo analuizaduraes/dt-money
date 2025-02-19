@@ -1,5 +1,6 @@
 import { createContext, ReactNode, useEffect, useState } from 'react';
 
+{/*duvida*/}
 interface Transaction {
   id: number;
   description: string;
@@ -9,14 +10,28 @@ interface Transaction {
   createdAt: string;
 }
 
+{/*duvida*/}
 interface TransactionContextType {
   transactions: Transaction[];
 }
 
+{/*duvida*/}
+{/*
+interface Transaction[] {
+  id: number;
+  description: string;
+  type: 'income' | 'outcome';
+  price: number;
+  category: string;
+  createdAt: string;
+  children: ReactNode
+}
+*/}
 interface TransactionsProviderProps {
   children: ReactNode
 }
 
+{/*duvida - async, await.. */}
 export const TransactionsContext = createContext({} as TransactionContextType);
 
 export function TransactionsProvider({ children }: TransactionsProviderProps) {

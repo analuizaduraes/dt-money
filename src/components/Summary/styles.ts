@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+
 export const SummaryContainer = styled.section`
   width: 100%;
   max-width: 1120px;
@@ -9,13 +10,18 @@ export const SummaryContainer = styled.section`
   gap: 2rem;
   margin-top: -5rem;
 `;
+
+{/*duvida*/}
 interface SummaryCardProps {
   variant?: "green"
 }
+
+
 export const SummaryCard = styled.div<SummaryCardProps>`
   background: ${props => props.theme["gray-600"]};
   border-radius: 6px;
   padding: 2rem;
+
   header {
     display: flex;
     align-items: center;

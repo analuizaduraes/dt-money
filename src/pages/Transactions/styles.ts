@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const TransactionsContainer = styled.main`
   width: 100%;
   max-width: 1120px;
@@ -22,16 +23,21 @@ export const TransactionsTable = styled.table`
     &:last-child {
       border-top-right-radius: 6px;
 
-      
+
+
+
       border-bottom-right-radius: 6px;
     }
   }
 `;
 
+
+{/*duvida*/}
 interface PriceHighlightProps {
   variant: "income" | "outcome";
 }
 
+{/*duvida*/}
 export const PriceHighlight = styled.span<PriceHighlightProps>`
   color: ${props => props.variant === "income" ? props.theme["green-300"] : props.theme["red-300"]};
 `;
